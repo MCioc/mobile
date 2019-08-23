@@ -18,6 +18,7 @@ public class ChargeDaoImpl implements ChargeDao {
 		return c.getCharge();
 	}
 	public List<Charge> getAll() {
+		
 		List<Charge> ca=Dao.query("SELECT * FROM tcharge", Charge.class);
 		return ca;
 	}
